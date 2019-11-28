@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "expo-pet-home",
+    "description": "A very interesting project.",
+    "slug": "expo-pet-home",
+    "privacy": "public",
+    "sdkVersion": "30.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.weteam.pethome",
+      "supportsTablet": false,
+      "config": {
+        "googleMapsApiKey": "AIzaSyDeAEP1N5-BeI_GIzMB4zn7JYuT5sez7JE"
+      }
+    },
+    "android": {
+      "package": "com.weteam.pethome",
+      "config": {
+        "googleMaps": { "apiKey": "AIzaSyDezNPzfDktkCPsaYjw6nCzCqvRUkrKjio" }   
+      }
+    }
+  }
+}

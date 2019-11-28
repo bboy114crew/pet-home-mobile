@@ -1,0 +1,59 @@
+{
+  "name": "my-new-project",
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "test": "node ./node_modules/jest/bin/jest.js --watchAll",
+    "flow": "flow",
+    "build": "babel src/ -d lib/",
+    "flow start": "flow start",
+    "flow stop": "flow stop",
+    "flow status": "flow status",
+    "flow coverage": "flow coverage"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "@expo/react-native-image-gallery": "^2.2.0",
+    "@expo/react-native-read-more-text": "^1.0.0",
+    "@expo/react-native-touchable-native-feedback-safe": "^1.0.0",
+    "@expo/samples": "2.1.1",
+    "@mapbox/polyline": "^1.0.0",
+    "@shoutem/animation": "^0.12.2",
+    "@shoutem/theme": "^0.11.1",
+    "@shoutem/ui": "^0.23.9",
+    "axios": "^0.18.0",
+    "crypto-js": "^3.1.9-1",
+    "expo": "^30.0.1",
+    "native-base": "2.8.1",
+    "prop-types": "^15.6.2",
+    "qs": "^6.6.0",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
+    "react-native-elements": "^0.19.1",
+    "react-native-fade-in-image": "^1.2.0",
+    "react-native-gifted-chat": "^0.4.3",
+    "react-native-modalbox": "^1.6.0",
+    "react-navigation": "^2.16.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.1",
+    "redux-persist": "^5.10.0",
+    "redux-saga": "^0.16.2",
+    "socket.io-client": "^2.1.1",
+    "whatwg-fetch": "^2.0.4",
+    "rn-viewpager": "^1.2.9"
+  },
+  "devDependencies": {
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "flow-bin": "^0.86.0",
+    "jest-expo": "30.0.0"
+  }
+}
