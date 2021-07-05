@@ -56,7 +56,6 @@ class CustomDrawer extends Component {
   render() {
     const { userData } = this.props.auth;
     const { notification } = this.props;
-    console.log(">>>>>> ", notification);
     return (
       <View style={styles.container}>
         <CustomTouchable
@@ -194,9 +193,6 @@ const mapDispatchToProps = dispatch => {
     setLoading: loading => {
       dispatch(setLoading(loading));
     },
-    // pushNotification: notification => {
-    //   dispatch(pushNotification(notification));
-    // },
     clearNotification: () => {
       dispatch(clearNotification());
     },

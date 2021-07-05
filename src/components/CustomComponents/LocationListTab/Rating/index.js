@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 import {
   View,
-  Dimensions,
   FlatList,
   ScrollView,
   Platform,
   Text,
 } from "react-native";
 import { Container, Header, Right, Icon, Button, Left } from "native-base";
-import { Divider, Screen, Image, TouchableOpacity, Title } from "@shoutem/ui";
+import { Divider, Screen, Image, Title } from "@shoutem/ui";
 import { Rating } from "react-native-elements";
 import LocationServices from "../../../../services/LocationServices";
-const { width, height } = Dimensions.get("window");
 
 export default class RatingComment extends Component {
   constructor(props) {
@@ -44,10 +42,6 @@ export default class RatingComment extends Component {
     } catch (error) {
       throw error;
     }
-  };
-
-  _onWriteComment = data => {
-    console.log(data);
   };
 
   _renderComment = ({ item }) => {
@@ -148,22 +142,6 @@ export default class RatingComment extends Component {
                 >
                   {"Đánh giá"}
                 </Text>
-                {/* <TouchableOpacity
-                  styleName="flexible"
-                  onPress={() => this._onWriteComment("jsjs")}
-                >
-                  <Text
-                    style={{
-                      textAlign: "right",
-                      fontFamily: "OpenSans-Bold",
-                      marginRight: 10,
-                      marginTop: 20,
-                      // alignItems: 'center'
-                    }}
-                  >
-                    Viết đánh giá
-                  </Text>
-                </TouchableOpacity> */}
               </View>
               <View
                 style={{

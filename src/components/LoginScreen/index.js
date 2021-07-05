@@ -1,26 +1,18 @@
 import React, { Component } from "react";
 import {
-  View,
   Text,
   TouchableOpacity,
   Image,
   Keyboard,
-  Dimensions,
-  StyleSheet,
+  StyleSheet
 } from "react-native";
 import {
   Container,
-  Header,
   Content,
   Form,
   Item,
   Input,
-  Label,
-  Button,
-  Left,
-  Right,
-  Body,
-  Title,
+  Label
 } from "native-base";
 import CustomHeader from "../CustomComponents/CustomHeader";
 import BackgroundImage from "../CustomComponents/BackgroundImage";

@@ -2,30 +2,18 @@ import React, { Component } from "react";
 import {
   View,
   Modal,
-  TextInput,
-  FlatList,
-  Animated,
-  Dimensions,
-  LayoutAnimation,
-  UIManager,
   TouchableOpacity,
 } from "react-native";
 import {
   Header,
   Icon,
   Button,
-  Container,
-  Content,
   Text,
-  ListItem,
-  Thumbnail,
   Left,
   Body,
   Right,
   Title,
-  Footer,
 } from "native-base";
-import { locationData, markerType } from "../../../../utils/fakeData";
 
 class FilterModal extends Component {
   constructor(props) {
@@ -36,7 +24,6 @@ class FilterModal extends Component {
   }
 
   setVisibleModal = visible => {
-    // console.log(visible);
     this.setState({
       visibleModal: visible,
     });

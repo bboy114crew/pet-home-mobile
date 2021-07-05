@@ -5,7 +5,6 @@ const socketIP = SERVER_INFO.PUBLIC_ADDRESS;
 const socketReducer = (state = null, { type, payload }) => {
   switch (type) {
     case "INIT": {
-      console.log("return socket");
       const socket = SocketClient(`http://${socketIP}:5000`);
       return socket;
     }

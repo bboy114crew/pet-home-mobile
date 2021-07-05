@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import {
   View,
   Animated,
-  Dimensions,
   TouchableOpacity,
   ActionSheetIOS,
 } from "react-native";
@@ -11,7 +10,6 @@ import AnimatedBackground from "./AnimatedBackground";
 import AnimatedAvatar from "./AnimatedAvatar";
 import AnimatedName from "./AnimatedName";
 import AnimatedNavBar from "./AnimatedNavBar";
-import { Button, Icon } from "native-base";
 import EditInfoModal from "./EditInfoModal";
 
 const HEADER_MAX_HEIGHT = 200;

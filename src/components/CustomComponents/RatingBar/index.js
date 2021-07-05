@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { View, Text, TouchableOpacity, Dimensions } from "react-native";
+import { View, TouchableOpacity } from "react-native";
 
-const SCREEN_WIDTH = Dimensions.get("window").width;
 
 const itemNumber = [1, 2, 3, 4, 5];
 

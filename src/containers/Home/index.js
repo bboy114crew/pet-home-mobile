@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
-import HomeTab from "../../components/HomeTab";
 import { connect } from "react-redux";
+import HomeTab from "../../components/HomeTab";
 import { toggle } from "../../redux/actions/UIActions";
 import { deletePost } from "../../redux/actions/PostActions";
 

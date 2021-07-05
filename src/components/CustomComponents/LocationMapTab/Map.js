@@ -102,14 +102,13 @@ class Map extends Component {
   };
 
   render() {
-    const { location, coords, selectLocation } = this.state;
+    const { coords, selectLocation } = this.state;
     const { userLocation, locationData } = this.props;
     return (
       <MapView
         ref={ref => (this.mapView = ref)}
         onPress={this._onMapPress}
         showsUserLocation={true}
-        // provider={"google"}
         style={styles.map}
         initialRegion={userLocation}
       >

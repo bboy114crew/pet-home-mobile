@@ -1,14 +1,10 @@
-import ApiServices from "../ApiServices";
-import { FileSystem } from "expo";
 import axios from "axios";
-import { Image, ImageStore, ImageEditor } from "react-native";
 const CryptoJS = require("crypto-js");
 
 var UploadCancelToken = axios.CancelToken;
 var uploadCancel;
 
 const cancelUpload = () => {
-  console.log(uploadCancel);
   if (uploadCancel != undefined) {
     uploadCancel();
   }
@@ -51,7 +47,6 @@ const uploadImage = async image => {
     return result.data;
   } catch (error) {
     if (axios.isCancel(error)) {
-      console.log("upload image canceled");
       throw error;
     } else {
       throw error;
@@ -61,7 +56,6 @@ const uploadImage = async image => {
 
 const destroyImage = async publicId => {
   try {
-    console.log(publicId);
     let timestamp = Date.now();
     let api_key = "725922376825761";
     let api_secret = "GVaWC1LcMS4hZHvyoZitrm8qcWE";

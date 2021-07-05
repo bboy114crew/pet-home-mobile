@@ -60,7 +60,6 @@ export default class extends Component {
   };
 
   _onDirectionPress = locationItem => {
-    console.log(locationItem)
     this.setState({ renderTab: false });
     this.props.navigation.navigate({
       routeName: "LocationMapTab",

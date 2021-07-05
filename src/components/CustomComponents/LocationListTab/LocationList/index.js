@@ -1,13 +1,8 @@
 import React from 'react';
 import {
-  ActivityIndicator,
-  Animated,
   FlatList,
-  Platform,
-  ScrollView,
-  StatusBar,
   StyleSheet,
-  View,
+  View
 } from 'react-native';
 import LocationListLargeItem from '../LocationListLargeItem'
 

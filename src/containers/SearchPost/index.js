@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
 import { connect } from "react-redux";
 import { toggle } from "../../redux/actions/UIActions";
 import SearchPostTab from "../../components/SearchPostTab";

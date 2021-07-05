@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
-import ProfileScreen from "../../components/ProfileScreen";
 import { connect } from "react-redux";
+import ProfileScreen from "../../components/ProfileScreen";
 import { toggle } from "../../redux/actions/UIActions";
 
 class Profile extends Component {

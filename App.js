@@ -44,10 +44,6 @@ export default class App extends Component {
 
   _splash = () => {
     setTimeout(() => {
-      // this.animation.reset();
-      // this.animation.play();
-    }, 10);
-    setTimeout(() => {
       this.setState({
         renderApp: true,
       });

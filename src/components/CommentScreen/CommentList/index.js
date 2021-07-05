@@ -24,10 +24,6 @@ class CommentList extends Component {
     });
   }
 
-  // scrollToEnd = () => {
-  //   this.list.scrollToEnd()
-  // }
-
   _requestGetComments = async () => {
     try {
       const { postData } = this.props;

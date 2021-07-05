@@ -29,8 +29,6 @@ class ChatModal extends Component {
     socket.emit("joinConversation", conversation);
     this.props.joinChatRoom(conversation._id);
     socket.on("sendMessage", async data => {
-      // console.log("socket id >> ", socket.id);
-      // console.log("response socket >> ", data);
       const mes = {
         _id: data.message._id,
         text: data.message.text,

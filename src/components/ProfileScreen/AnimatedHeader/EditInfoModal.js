@@ -13,7 +13,6 @@ import {
   Text,
   Header,
   Left,
-  Body,
   Right,
   Icon,
   Spinner,
@@ -27,7 +26,6 @@ import { login } from "../../../redux/actions/AuthActions";
 import { connect } from "react-redux";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
-const SCREEN_HEIGHT = Dimensions.get("window").height;
 
 class EditInfoModal extends Component {
   constructor(props) {
@@ -58,7 +56,6 @@ class EditInfoModal extends Component {
         this.setState({ photos: r.edges });
       })
       .catch(e => {
-        console.log(e);
       });
   };
 

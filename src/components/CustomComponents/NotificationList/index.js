@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { TouchableOpacity, FlatList, RefreshControl } from "react-native";
 import {
-  List,
   Left,
   Body,
   Right,
@@ -43,8 +42,6 @@ class NotificationList extends Component {
   };
 
   _onItemPress = item => {
-    // console.log(item);
-    // console.log(this.props.navigation);
     if (item.type === "post" || item.type === "post-comment" || item.type === "post-vote") {
       this.props.navigation.navigate({
         routeName: "CommentScreen",

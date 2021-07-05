@@ -26,7 +26,6 @@ class AddPostTab extends Component {
   constructor(props) {
     super(props);
     const postData = props.postData;
-    console.log(postData);
     this.state = {
       images: !postData ? [] : postData.images,
       loading: false,
@@ -52,14 +51,12 @@ class AddPostTab extends Component {
         postCategories: rs,
       });
     } catch (er) {
-      console.log(er);
     }
   };
 
   _onSubmitPicture = images => {
     let tmp = this.state.images;
     tmp = tmp.concat(images);
-    console.log(tmp);
     this.setState({
       images: tmp,
     });

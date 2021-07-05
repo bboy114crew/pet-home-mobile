@@ -1,27 +1,20 @@
 import React from "react";
 import {
-  View,
   FlatList,
   Animated,
   RefreshControl,
   ActionSheetIOS,
-  Alert,
-  AlertIOS,
-  TouchableOpacity,
+  Alert
 } from "react-native";
-import { Container, List, ListItem, Button, Text } from "native-base";
+import { Container } from "native-base";
 import PostItem from "../CustomComponents/PostList/PostItem";
 import AnimatedHeader from "./AnimatedHeader";
-import PostOptionModal from "../CustomComponents/PostOptionModal";
 import EditPostModal from "../CustomComponents/EditPostModal";
-
 import PostServices from "../../services/PostServices";
-import AnimatedOptionBar from "./AnimatedHeader/AnimatedOptionBar";
 
 const animatedValue = new Animated.Value(0);
 const AnimatedList = Animated.createAnimatedComponent(FlatList);
 
-const BUTTON_HEIGHT = 45;
 class ProfileScreen extends React.Component {
   constructor(props) {
     super(props);

@@ -10,11 +10,7 @@ import {
   Icon,
   Badge,
 } from "native-base";
-import { Notifications } from "expo";
-import {
-  pushNotification,
-  clearNotification,
-} from "../../../redux/actions/NotificationActions";
+import { clearNotification } from "../../../redux/actions/NotificationActions";
 import { connect } from "react-redux";
 
 class CustomHeader extends Component {
@@ -111,7 +107,7 @@ class CustomHeader extends Component {
   };
 
   render() {
-    const { title, notification } = this.props;
+    const { title } = this.props;
     return (
       <Header
         noShadow={true}

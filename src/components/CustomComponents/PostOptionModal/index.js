@@ -75,7 +75,6 @@ class PostOptionModal extends Component {
   };
 
   _onPress = type => {
-    console.log(type);
     if (type === "report") return this._openReport();
   };
 

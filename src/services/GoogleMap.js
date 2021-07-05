@@ -32,14 +32,12 @@ const getDirections = async (startLoc, destinationLoc) => {
 const searchLocation = async (searchQuery, userLocation) => {
   try {
     if (searchCancel != undefined) {
-      console.log("aa");
       searchCancel();
     }
     const response = await axios.get(
       "https://maps.googleapis.com/maps/api/place/textsearch/json?",
       {
         cancelToken: new SearchCancelToken(c => {
-          console.log(c);
           searchCancel = c;
         }),
         params: {
@@ -53,7 +51,6 @@ const searchLocation = async (searchQuery, userLocation) => {
     return response.data.results;
   } catch (error) {
     if (axios.isCancel(error)) {
-      console.log("canceled");
     } else {
       throw error;
     }

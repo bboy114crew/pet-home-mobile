@@ -1,7 +1,7 @@
+import { put, all, takeLatest } from "redux-saga/effects";
+import PostServices from "../../services/PostServices";
 import PostActionTypes from "../types/PostActionTypes";
 import { getSuccess, getFailed } from "../actions/PostActions";
-import PostServices from "../../services/PostServices";
-import { put, all, takeLatest } from "redux-saga/effects";
 
 const getPost = function*({ type, payload }) {
   try {

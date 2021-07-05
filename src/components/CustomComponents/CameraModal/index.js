@@ -42,9 +42,7 @@ export default class extends Component {
   _takePicture = async () => {
     if (this.camera) {
       let photo = await this.camera.takePictureAsync();
-      let tmpPhotos = this.state.photos;
       this.photos.push(photo)
-      // console.log(this.photos)
     }
   }
 

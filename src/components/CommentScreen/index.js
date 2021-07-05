@@ -17,7 +17,6 @@ export default class extends Component {
   }
 
   _sendCommentCallback = () => {
-    // this.commentList._requestGetComments();
     this.contentView.scrollToEnd();
   };
 

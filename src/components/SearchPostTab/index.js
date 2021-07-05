@@ -9,7 +9,7 @@ import {
   ActionSheetIOS,
   Alert,
 } from "react-native";
-import { Container, Header, Button, Icon } from "native-base";
+import { Container, Header } from "native-base";
 import { Image } from '@shoutem/ui';
 import PostItem from "../CustomComponents/PostList/PostItem";
 import ReportModal from "../CustomComponents/PostOptionModal/ReportModal";
@@ -111,22 +111,6 @@ class SearchPostTab extends Component {
         >
           <View
             style={{
-              // flex: 1,
-              // flexDirection: "row",
-              // alignItems: "center",
-              // borderWidth: 1.4,
-              // borderColor: "#00000035",
-              // borderRadius: 10,
-              // shadowColor: "#00000070",
-              // shadowOffset: { width: 0, height: 2 },
-              // shadowOpacity: 1,
-              // shadowRadius: 1,
-              // borderTopWidth: 0.4,
-              // borderTopColor: "#00000010",
-              // borderRightWidth: 0.4,
-              // borderRightColor: "#00000020",
-              // borderLeftWidth: 0.8,
-              // borderLeftColor: "#00000030",
               flex: 1,
               flexDirection: "row",
               alignItems: "center",

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, FlatList, RefreshControl } from "react-native";
-import { List, Left, Body, ListItem, Thumbnail, Text } from "native-base";
+import { Left, Body, ListItem, Thumbnail, Text } from "native-base";
 import { connect } from "react-redux";
 import MessageServices from "../../../services/MessageServices";
 

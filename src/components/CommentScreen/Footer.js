@@ -59,7 +59,6 @@ class Footer extends Component {
     try {
       const deletionFlag = await this._requestGetDeletionFlag();
       if (deletionFlag === true) {
-        console.log(this.props.toast);
         Keyboard.dismiss();
         this.props.toast({ message: "Bài viết này đã bị cấm", duration: 3000 });
         return;

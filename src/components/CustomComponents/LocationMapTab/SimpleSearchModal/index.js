@@ -53,15 +53,6 @@ class SimpleSearchModal extends Component {
     }
   };
 
-  // _requestGetLocationList = async () => {
-  //   try {
-  //     const result = await LocationServices.getSuggestLocation();
-  //     this.locationData = result;
-  //   } catch (error) {
-  //     throw error;
-  //   }
-  // };
-
   _onSearchQueryChange = text => {
     this.textSearch = text;
     if (this.searchWaiting) {
@@ -116,7 +107,6 @@ class SimpleSearchModal extends Component {
   };
 
   _searchDestinationLocation = (text, nearby) => {
-    console.log("destination: ", text, nearby);
     this._requestSearchLocation(text, nearby.latitude, nearby.longitude);
   };
 

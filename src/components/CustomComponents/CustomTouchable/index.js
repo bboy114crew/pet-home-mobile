@@ -1,15 +1,10 @@
 import React, { Component } from "react";
 import { TouchableOpacity } from "react-native";
 import PropTypes from "prop-types";
-
-import { loginFb } from "../../../services/LoginFacebook";
-
-import { login, logout } from "../../../redux/actions/AuthActions";
-
-import { setLoading } from "../../../redux/actions/UIActions";
-
 import { connect } from "react-redux";
-
+import { loginFb } from "../../../services/LoginFacebook";
+import { login, logout } from "../../../redux/actions/AuthActions";
+import { setLoading } from "../../../redux/actions/UIActions";
 import { toggle } from "../../../redux/actions/UIActions";
 
 class CustomTouchable extends Component {

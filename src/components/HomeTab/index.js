@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { View, NativeModules, ActionSheetIOS, Alert } from "react-native";
 import CustomHeader from "../CustomComponents/CustomHeader";
 import ActivityModal from "../CustomComponents/ActivityModal";
-import PostOptionModal from "../CustomComponents/PostOptionModal";
 import PostList from "../CustomComponents/PostList";
 import PostCategories from "../CustomComponents/PostCategories";
 import ReportModal from "../CustomComponents/PostOptionModal/ReportModal";

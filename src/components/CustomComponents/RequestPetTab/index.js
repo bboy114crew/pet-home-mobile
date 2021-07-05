@@ -2,21 +2,14 @@ import React, { Component } from "react";
 import {
   View,
   FlatList,
-  Dimensions,
-  Image,
-  SectionList,
   ActionSheetIOS,
   RefreshControl,
 } from "react-native";
 import CustomHeader from "../CustomHeader";
-import { Button, Text } from "native-base";
 import UserServices from "../../../services/UserServices";
 import RequestItem from "./RequestItem";
 import ChatModal from "../ChatModal";
 import InfoModal from "./InfoModal";
-
-const SCREEN_WIDTH = Dimensions.get("window").width;
-const SCREEN_HEIGHT = Dimensions.get("window").height;
 
 class RequestPetTab extends Component {
   constructor(props) {
@@ -89,7 +82,6 @@ class RequestPetTab extends Component {
   };
 
   _onInfoPress = petId => {
-    console.log(petId);
     this.infoModal.setModalVisible(true, petId);
   };
 

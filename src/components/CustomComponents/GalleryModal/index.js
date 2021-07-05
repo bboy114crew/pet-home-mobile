@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { View, Text, Modal, FlatList, CameraRoll } from "react-native";
+import { View, Modal, FlatList } from "react-native";
 import { Button, Icon } from "native-base";
-import { ImagePicker, Permissions, FileSystem, MediaLibrary } from "expo";
+import { MediaLibrary } from "expo";
 import CustomHeader from "../../CustomComponents/CustomHeader";
 
-import PhotoList from "./PhotoList";
 import Photo from "./Photo";
 
 export default class extends Component {

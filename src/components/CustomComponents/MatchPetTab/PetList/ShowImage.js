@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, Modal, FlatList, Dimensions, Image } from "react-native";
+import { View, Modal, FlatList, Dimensions, Image } from "react-native";
 import CustomHeader from "../../CustomHeader";
 const SCREEN_HEIGHT = Dimensions.get("window").height;
 const SCREEN_WIDTH = Dimensions.get("window").width;

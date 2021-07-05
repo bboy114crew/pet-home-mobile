@@ -46,7 +46,6 @@ class LocationReviewModal extends Component {
         ratingStar: rating,
       };
       const result = await LocationServices.addReview(rv);
-      console.log(result);
       if (result._id) {
         this.props.toast({
           message: "Đánh giá địa điểm thành công",

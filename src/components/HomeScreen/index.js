@@ -1,13 +1,8 @@
 import React, { Component } from "react";
-import { Container, Text, Icon, Tabs, Tab, TabHeading } from "native-base";
-
+import { Container, Icon, Tabs, Tab, TabHeading } from "native-base";
 import "../CustomComponents/PostOptionModal";
-
-import Modal from "react-native-modalbox";
-
 import AddPostTab from "../CustomComponents/AddPostTab";
 import SearchPostTab from "../CustomComponents/SearchPostTab";
-
 import HomeTab from "../CustomComponents/HomeTab";
 export default class extends Component {
   _onCreateDone = () => {

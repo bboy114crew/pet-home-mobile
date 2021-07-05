@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, FlatList, Dimensions, Animated } from "react-native";
+import { Dimensions, Animated } from "react-native";
 import { Title } from "native-base";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;

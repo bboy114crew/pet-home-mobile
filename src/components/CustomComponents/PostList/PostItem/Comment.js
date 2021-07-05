@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { View } from "react-native";
 import { Button, Icon, Text } from "native-base";
-import { Notifications } from "expo";
 import PostServices from "../../../../services/PostServices";
 class Vote extends Component {
   constructor(props) {

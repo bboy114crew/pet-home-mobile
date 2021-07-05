@@ -1,5 +1,4 @@
 import ApiServices from "../ApiServices";
-import ImageServers from "../ImageServices";
 
 const getAllPostCategories = async () => {
   try {

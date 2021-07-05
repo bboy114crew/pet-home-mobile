@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
-import CommentScreen from "../../components/CommentScreen";
 import { connect } from "react-redux";
+import CommentScreen from "../../components/CommentScreen";
 import { toggle } from "../../redux/actions/UIActions";
 
 class Comment extends Component {

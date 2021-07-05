@@ -4,7 +4,6 @@ import PetServices from "../../../../services/PetServices";
 import UserServices from "../../../../services/UserServices";
 
 const animatedValue = new Animated.Value(0);
-const AnimatedButton = Animated.createAnimatedComponent(TouchableOpacity);
 
 const asyncNextFrame = () => {
   return new Promise(resolve => requestAnimationFrame(() => resolve()));
@@ -58,10 +57,7 @@ class ListPopup extends Component {
 
   _onItemPress = async item => {
     try {
-      // const { item } = this.props;
       const requestPet = this.props.item;
-      // console.log("my item: ", item);
-      // console.log("pet item: ", requestPet);
       const { userData } = this.props;
       const receiver = await this._getReceiverInfo(requestPet.ownerId._id);
       const notification = {
@@ -80,7 +76,7 @@ class ListPopup extends Component {
           type: "pet",
         },
       };
-      const rs = await UserServices.sendNotification(notification);
+      await UserServices.sendNotification(notification);
       this.props.toast({
         message: "Đã gửi yêu cầu ghép cặp",
         duration: 3000,

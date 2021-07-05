@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
 import LoginScreen from "../../components/LoginScreen";
 
 class Login extends Component {

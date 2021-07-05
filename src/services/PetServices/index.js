@@ -113,7 +113,6 @@ const ignore = async (petId, userId) => {
 
 const requestMatch = async data => {
   try {
-    console.log(data)
     const url = `app/notification/add`;
     const method = "POST";
     const result = await ApiServices.requestOption(method, url, data);
@@ -137,16 +136,6 @@ const changeStatus = async (notificationId, status, notification) => {
     throw error;
   }
 };
-
-// const getRequest = async (userId) => {
-//   try {
-//     const url = ``
-//     const method = 'POST'
-//     const result = await ApiServices.requestOption(method, url, {})
-//   } catch (error) {
-//     throw error;
-//   }
-// }
 
 export default {
   addPet,

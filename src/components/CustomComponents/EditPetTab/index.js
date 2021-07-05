@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import {
   View,
   FlatList,
-  Dimensions,
   RefreshControl,
   Alert,
   Text,

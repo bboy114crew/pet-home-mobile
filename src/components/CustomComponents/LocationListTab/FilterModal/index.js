@@ -22,12 +22,11 @@ import {
 import { CheckBox } from "react-native-elements";
 import LocationServices from "../../../../services/LocationServices";
 
-const { width, height } = Dimensions.get("window");
+const { width } = Dimensions.get("window");
 
 export default class FilterModal extends Component {
   constructor(props) {
     super(props);
-    // const { listPrivateCategories, listPublicCategories } = this.props;
     this.state = {
       visibleModal: false,
       selectedStarId: "",
@@ -43,9 +42,6 @@ export default class FilterModal extends Component {
   }
 
   setVisibleModal = visible => {
-    // if (visible) {
-    //   this._requestGetLocationCategoriesWithType();
-    // }
     this.setState({
       visibleModal: visible,
     });

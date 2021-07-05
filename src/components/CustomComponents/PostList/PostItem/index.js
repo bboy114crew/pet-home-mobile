@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { View, Image, TouchableOpacity, ActionSheetIOS } from "react-native";
+import { View, TouchableOpacity, ActionSheetIOS } from "react-native";
 import {
   Card,
   CardItem,
   Thumbnail,
   Text,
-  Button,
   Icon,
   Left,
   Body,
@@ -72,7 +71,6 @@ class PostItem extends Component {
     }
     socket.on("editPost", post => {
       if (postData && post._id === postData._id) {
-        console.log("edit post: ", post);
         this._requestGetPostData();
       }
     });

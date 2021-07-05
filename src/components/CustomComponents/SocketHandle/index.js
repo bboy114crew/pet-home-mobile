@@ -1,6 +1,4 @@
-import React, { Component } from "react";
-import { View, Text } from "react-native";
-import MessageServices from "../../../services/MessageServices";
+import { Component } from "react";
 
 import { connect } from "react-redux";
 import { initSocket } from "../../../redux/actions/SocketActions";
@@ -22,7 +20,6 @@ class SocketHandle extends Component {
     const { userData } = this.props;
     if (!userData) return;
     this._onBanUser();
-    // this._onReceiveMessage();
   };
 
   _onBanUser = () => {
@@ -38,17 +35,6 @@ class SocketHandle extends Component {
       }
     });
   };
-
-  // _onReceiveMessage = () => {
-  //   const { socket, userData, toast, logout } = this.props;
-  //   socket.on("sendMessage", data => {
-  //     console.log("message: ", data);
-  //     this.props.pushNotification({
-  //       message: `${data.user.appName}: ${data.message.text}`,
-  //       type: "message",
-  //     });
-  //   });
-  // };
 
   render() {
     const { socket } = this.props;

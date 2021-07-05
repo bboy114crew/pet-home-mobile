@@ -1,15 +1,11 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 import { Button } from "native-base";
-
 import { loginFb } from "../../../services/LoginFacebook";
-
 import { login, logout } from "../../../redux/actions/AuthActions";
-
 import { toggle } from "../../../redux/actions/UIActions";
 
-import { connect } from "react-redux";
-
-import PropTypes from "prop-types";
 
 class CustomButton extends Component {
   _onPress = async () => {

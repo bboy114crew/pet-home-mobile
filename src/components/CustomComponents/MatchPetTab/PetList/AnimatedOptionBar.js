@@ -4,9 +4,7 @@ import {
   Animated,
   Image,
   TouchableOpacity,
-  StyleSheet,
-  View,
-  Alert,
+  StyleSheet
 } from "react-native";
 import LikeNumber from "./LikeNumber";
 import PetServices from "../../../../services/PetServices";

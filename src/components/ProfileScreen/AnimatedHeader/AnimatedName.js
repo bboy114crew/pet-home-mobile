@@ -2,13 +2,10 @@ import React, { Component } from "react";
 import { Text, Animated, Dimensions } from "react-native";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
-
 const HEADER_MAX_HEIGHT = 200;
-
 const NAME_MAX_WIDTH = SCREEN_WIDTH - 100;
 const NAME_MAX_HEIGHT = 24;
 
-const TEXT_HEIGHT = 24.5
 
 class AnimatedName extends Component {
   constructor(props) {

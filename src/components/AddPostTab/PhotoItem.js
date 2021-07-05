@@ -48,11 +48,6 @@ class PhotoItem extends Component {
       if (loading) {
         ImageServices.cancelUpload();
       }
-      // else {
-      //   if (this.image) {
-      //     ImageServices.destroyImage(this.image.public_id);
-      //   }
-      // }
       if (removeItem) {
         const img = this.image ? this.image : item;
         removeItem(img);

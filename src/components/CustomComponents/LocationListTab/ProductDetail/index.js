@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Dimensions, Platform, FlatList, ScrollView } from 'react-native';
-import { Container, Header, Icon, Button, Right , Left} from 'native-base';
-import { Divider, Card, Screen, Image, Subtitle, Caption, TouchableOpacity, Spinner, Title } from '@shoutem/ui';
-import ProductServices from "../../../../services/ProductServices";
 import { Constants } from "expo";
+import { View, Dimensions, Platform, FlatList, ScrollView } from 'react-native';
+import { Container, Header, Icon, Button, Right , Left} from 'native-base';
+import { Divider, Card, Screen, Image, Subtitle, Caption, TouchableOpacity, Spinner } from '@shoutem/ui';
+import ProductServices from "../../../../services/ProductServices";
 
-const { width, height } = Dimensions.get('window');
+const { height } = Dimensions.get('window');
 
 export default class ProductDetail extends Component {
   constructor(props) {

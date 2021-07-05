@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, FlatList, Dimensions, Animated } from "react-native";
-import { Text, Icon } from "native-base";
+import { Text } from "native-base";
 import AnimatedTitle from "./AnimatedTitle";
 import AnimatedOptionBar from "./AnimatedOptionBar";
 import AnimatedPetImage from "./AnimatedPetImage";

@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { View, Text, Modal } from "react-native";
+import { Modal } from "react-native";
 import { Tabs, Tab } from "native-base";
 import CustomHeader from "../CustomHeader";
 import NotificationList from "../NotificationList";
 import MessageList from "../MessageList";
-import { Notifications } from "expo";
 
 class ActivityModal extends Component {
   constructor(props) {

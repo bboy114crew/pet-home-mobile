@@ -1,19 +1,11 @@
 import React, { Component } from "react";
-import { View, FlatList } from "react-native";
 import {
   Container,
   Tabs,
   Tab,
   TabHeading,
-  Icon,
-  Header,
-  Card,
-  CardItem,
-  Left,
-  Body,
-  Right,
+  Icon
 } from "native-base";
-import CustomHeader from "../CustomComponents/CustomHeader";
 import MatchPetTab from "../CustomComponents/MatchPetTab";
 import EditPetTab from "../CustomComponents/EditPetTab";
 import RequestPetTab from "../CustomComponents/RequestPetTab";

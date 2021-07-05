@@ -1,13 +1,12 @@
 import React, { PureComponent } from "react";
 import {
-  View,
   Text,
   Animated,
   StyleSheet,
   TouchableOpacity,
 } from "react-native";
 import { connect } from "react-redux";
-import { toggle, clear } from "../../../redux/actions/UIActions";
+import { clear } from "../../../redux/actions/UIActions";
 
 const animatedValue = new Animated.Value(1);
 const AnimButton = Animated.createAnimatedComponent(TouchableOpacity);

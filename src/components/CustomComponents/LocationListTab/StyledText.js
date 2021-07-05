@@ -3,9 +3,6 @@ import {
   StyleSheet,
   Text,
 } from 'react-native';
-import {
-  Font,
-} from 'expo';
 
 export class RegularText extends React.Component {
   render() {

@@ -1,13 +1,10 @@
 import React, { Component } from "react";
-import { View, Modal, StyleSheet, Dimensions, FlatList } from "react-native";
+import { View, Modal, StyleSheet, FlatList } from "react-native";
 import {
   Form,
   Container,
   Content,
   Input,
-  Label,
-  Item,
-  Textarea,
   Picker,
   Text,
 } from "native-base";

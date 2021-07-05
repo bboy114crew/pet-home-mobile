@@ -34,7 +34,6 @@ class EditPostModal extends Component {
   render() {
     const { postData, modalVisible } = this.state;
     if (!postData) return null;
-    console.log("modal edit: ", postData);
     return (
       <Modal transparent={false} visible={modalVisible} animationType="slide">
         {postData ? (

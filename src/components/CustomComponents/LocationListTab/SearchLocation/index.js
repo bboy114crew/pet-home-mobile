@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, TextInput, Dimensions, Platform } from 'react-native';
+import { View, TextInput, Platform } from 'react-native';
 import { Container, Header, Icon, Button, Spinner } from 'native-base';
 import { Text, Screen, Image, TouchableOpacity } from '@shoutem/ui';
 import LocationList from '../LocationList';
@@ -7,7 +7,6 @@ import FilterModal from '../FilterModal';
 import LocationServices from "../../../../services/LocationServices";
 import { Constants } from "expo";
 
-const { width, height } = Dimensions.get('window');
 class SearchLocation extends Component {
   constructor(props) {
     super(props);
@@ -110,8 +109,7 @@ class SearchLocation extends Component {
   }
 
   render() {
-    console.disableYellowBox = true; 
-    const { loading, listLocations, loadingCategory, listPrivateCategories, listPublicCategories } = this.state;
+    const { loading, listLocations, loadingCategory } = this.state;
     if (loading && loadingCategory) {
       return (
         <View style={{flex: 1, justifyContent: 'center',alignItems: 'center'}}>

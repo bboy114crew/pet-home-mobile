@@ -1,7 +1,7 @@
-import ApiServices from "../ApiServices";
 import axios from "axios";
-import { API_URL } from "../../constants/config";
 import qs from "qs";
+import ApiServices from "../ApiServices";
+import { API_URL } from "../../constants/config";
 
 const getLocation = async userLocation => {
   const url = `location/searchDist/${userLocation.longitude}/${
@@ -53,7 +53,6 @@ const getLocationByCategory = async data => {
 };
 
 const searchLocation = async data => {
-  console.log(">> ", data)
   let newtypeIdArray = []
   if(data.typeIdArray.length > 0) {
     newtypeIdArray = data.typeIdArray.map(item => {return {typeId: item._id}});

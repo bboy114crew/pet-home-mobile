@@ -19,14 +19,12 @@ import {
   Caption,
   TouchableOpacity,
   Title,
-  Spinner,
-  Tile,
+  Spinner
 } from "@shoutem/ui";
 import { MapCard } from "../DetailCard/index";
 import { Rating } from "react-native-elements";
 import LocationServices from "../../../../services/LocationServices";
 import LocationReviewModal from "../../LocationReviewModal";
-import { IndicatorViewPager, PagerDotIndicator } from "rn-viewpager";
 
 import { connect } from "react-redux";
 
@@ -119,29 +117,6 @@ class LocationDetail extends Component {
     </TouchableOpacity>
   );
 
-  // _renderLocationImage(item, index){
-  //   return (
-  //     <TouchableOpacity
-  //       key={item._id}
-  //       styleName="flexible"
-  //       onPress={this._onPress}
-  //     >
-  //         <Image
-  //           style={{
-  //             flex: 1,
-  //             resizeMode: 'contain',
-  //             width: width,
-  //             height: height/3,
-  //           }}
-  //           source={{ uri: item.secure_url }}
-  //           borderRadius="5"
-  //         />  
-  //     </TouchableOpacity>
-  //   )
-  // };
-
-
-
   _renderProduct = ({ item }) => {
     return (
       <TouchableOpacity
@@ -190,7 +165,6 @@ class LocationDetail extends Component {
   };
 
   render() {
-    const startPage = 0;
     const { loading, locationDetail, reviews } = this.state;
     const { navigation } = this.props;
     const userData = navigation.getParam("userData", "NO-ID");
@@ -256,18 +230,6 @@ class LocationDetail extends Component {
                 renderItem={this._renderLocationImage}
                 horizontal
               />
-              // <View style={{flex: 1}}>
-              //   <IndicatorViewPager
-              //     initialPage = { startPage }
-              //     indicator = { 
-              //     <PagerDotIndicator pageCount = { locationDetail.images.length } style={{ marginBottom: 15}}/> }
-              //     style = {{
-              //       // flex: 1,
-              //       height: height /3
-              //     }}>
-              //     { locationDetail.images.map((item, index) => this._renderLocationImage(item, index))}
-              //   </IndicatorViewPager>
-              // </View>
             ) : null}
             <View
               style={{

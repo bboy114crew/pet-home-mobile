@@ -1,12 +1,10 @@
 import {
   createDrawerNavigator,
   createStackNavigator,
-  createSwitchNavigator,
 } from "react-navigation";
 import { Dimensions } from "react-native";
 
 import HomeRoute from "../HomeRoute";
-import AuthRoute from "../AuthRoute";
 import LocationRoute from "../LocationRoute";
 import CustomDrawer from "../../components/CustomComponents/CustomDrawer";
 import ProfileRoute from "../ProfileRoute";
@@ -15,9 +13,6 @@ import CommentScreen from "../../containers/Comment";
 
 const stackApp = createStackNavigator(
   {
-    // AuthRoute: {
-    //   screen: AuthRoute,
-    // },
     HomeRoute: {
       screen: HomeRoute,
     },
@@ -35,7 +30,6 @@ const stackApp = createStackNavigator(
     },
   },
   {
-    // initialRouteName: "HomeRoute",
     navigationOptions: () => ({
       header: null,
       headerStyle: {

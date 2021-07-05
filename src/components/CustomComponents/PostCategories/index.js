@@ -3,12 +3,11 @@ import {
   Text,
   FlatList,
   TouchableOpacity,
-  View,
   StyleSheet,
 } from "react-native";
+import { connect } from "react-redux";
 import PostServices from "../../../services/PostServices";
 import { getPost } from "../../../redux/actions/PostActions";
-import { connect } from "react-redux";
 
 class PostCategories extends Component {
   state = {

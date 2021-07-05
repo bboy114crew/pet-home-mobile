@@ -1,13 +1,9 @@
 import React, { Component } from "react";
 import {
-  View,
   Text,
   TouchableOpacity,
-  Dimensions,
   Animated,
 } from "react-native";
-
-const SCREEN_HEIGHT = Dimensions.get("window").height;
 
 class AnimatedOptionBar extends Component {
   constructor(props) {

@@ -3,7 +3,6 @@ import {
   FlatList,
   View,
   Text,
-  Dimensions,
   StyleSheet,
   RefreshControl,
 } from "react-native";
@@ -47,9 +46,6 @@ class PostList extends PureComponent {
 
   render() {
     const { loading, postData, postType } = this.props.postState;
-
-    console.log((">>> post data ", postData))
-
     if (loading) {
       return (
         <View style={styles.background}>

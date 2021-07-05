@@ -4,7 +4,6 @@ import {
   createBottomTabNavigator,
 } from "react-navigation";
 import { Icon } from "native-base";
-import CommentScreen from "../../containers/Comment";
 import HomeTab from "../../containers/Home";
 import SearchPost from "../../containers/SearchPost";
 import AddPost from "../../containers/AddPost";
@@ -48,7 +47,6 @@ const HomeTabRoute = createBottomTabNavigator(
 const HomeRoute = createStackNavigator(
   {
     Home: HomeTabRoute,
-    // CommentScreen: CommentScreen,
   },
   {
     initialRouteName: "Home",

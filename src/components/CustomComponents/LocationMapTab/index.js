@@ -28,7 +28,6 @@ export default class extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.navigation.getParam("type"));
     if (Platform.OS === "android" && !Constants.isDevice) {
       console.log(
         "Oops, this will not work on Sketch in an Android emulator. Try it on your device!"
@@ -68,7 +67,6 @@ export default class extends Component {
         ...userLocation,
         radius: 5000,
       });
-      console.log(result);
       this.setState({ listLocations: result });
     } catch (error) {
       throw error;

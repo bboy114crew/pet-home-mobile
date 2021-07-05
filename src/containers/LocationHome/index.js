@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
-import LocationHomeScreen from "../../components/LocationHomeScreen";
 import { connect } from "react-redux";
+import LocationHomeScreen from "../../components/LocationHomeScreen";
 import { toggle } from "../../redux/actions/UIActions";
 
 class LocationHome extends Component {

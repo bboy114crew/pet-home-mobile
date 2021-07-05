@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, Animated } from "react-native";
-import { Thumbnail } from "native-base";
 import { Notifications } from "expo";
 import { connect } from "react-redux";
 import UserServices from "../../../services/UserServices";
@@ -33,11 +32,10 @@ class NotificationHandle extends Component {
 
   _notificationHandle = async notification => {
     try {
-      console.log(notification);
       const { userData, userStates } = this.props;
       const sender = await this._getSender(notification.data.sender);
       if (sender._id !== userData._id) {
-        //check don't send notification myself
+        // Check don't send notification myself
         if (
           notification.data.type === "message" &&
           notification.data.content.room === userStates.inChatRoom
@@ -55,7 +53,6 @@ class NotificationHandle extends Component {
   _getSender = async userId => {
     try {
       const sender = await UserServices.findUser(userId);
-      console.log("sender: ", sender);
       return sender;
     } catch (error) {
       throw error;
@@ -77,8 +74,6 @@ class NotificationHandle extends Component {
     });
 
     if (this.state.canRender === false) return null;
-
-    // if (notification) return null;
 
     this._hide(3000);
 

@@ -1,5 +1,4 @@
 import React, { PureComponent } from "react";
-import { View } from "react-native";
 import { Icon, Text } from "native-base";
 import CustomButton from "../../CustomButton";
 import PostServices from "../../../../services/PostServices";
@@ -45,7 +44,7 @@ class Vote extends PureComponent {
   _requestVote = async () => {
     this._setLoading(true);
     try {
-      const { postData, type, voteCallback, userData, socket } = this.props;
+      const { postData, type, userData, socket } = this.props;
       const data = {
         postId: postData._id,
         voterId: userData._id,
@@ -98,7 +97,7 @@ class Vote extends PureComponent {
 
   render() {
     const { voteCount, loading, voted } = this.state;
-    const { type, socket, postData } = this.props;
+    const { type } = this.props;
     const activeColor = !voted ? "#B5B5B5" : type === 1 ? "#EC466A" : "#FF8EBC";
     const typeIcon = type === 1 ? "md-thumbs-up" : "md-thumbs-down";
 
