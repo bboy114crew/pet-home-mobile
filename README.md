@@ -1,4 +1,3 @@
-expo-pet-home
 
 ![Visualization of the codebase](./diagram.svg)
 
