@@ -1,4 +1,7 @@
+#### Introduction
+This is mobile app in my capstone project
 
+#### Visualization of the codebase
 ![Visualization of the codebase](./diagram.svg)
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
